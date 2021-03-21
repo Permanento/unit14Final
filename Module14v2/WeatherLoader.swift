@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol WeatherLoaderDelegate {
-    func loaded(weathers:[Weather])
+    func loaded()
 }
 
 
@@ -44,7 +44,7 @@ class WeatherLoader {
                 
 
                 DispatchQueue.main.async {
-                    self.delegate?.loaded(weathers: allWeathers)
+                    self.delegate?.loaded()
                 }
                 }
                 

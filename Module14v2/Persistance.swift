@@ -25,10 +25,6 @@ class Persistance{
         get {return UserDefaults.standard.string(forKey: kUserLastNameKey)}
     }
     
-    private let kWeathersArrayKey = "Persistance.kWeathersArrayKey"
-    var weathersArray: [Weather]{
-        set {UserDefaults.standard.set(newValue,forKey: kWeathersArrayKey)}
-        get {return UserDefaults.standard.array(forKey: kWeathersArrayKey) as? [Weather] ?? []}
-    }
+    
     
 }
